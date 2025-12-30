@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+*.egg-info/
 # Visual Studio Code files
 .vscode
 .vs
@@ -40,6 +40,9 @@ tensorboard
 # Clangd files
 .cache
 compile_commands.json
+
+# models
+pretrained_models/
 
 # train/inference files
 *.wav

@@ -1,0 +1,14 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
+
+# CUDA-specific runtime packages (Linux only).
+deepspeed==0.15.1; sys_platform == 'linux'
+onnxruntime-gpu==1.18.0; sys_platform == 'linux'
+tensorrt-cu12==10.13.3.9; sys_platform == 'linux'
+tensorrt-cu12-bindings==10.13.3.9; sys_platform == 'linux'
+tensorrt-cu12-libs==10.13.3.9; sys_platform == 'linux'
+
+# CUDA-enabled PyTorch wheels from the extra index above.
+torch==2.3.1
+torchaudio==2.3.1
+torchvision==0.18.1
