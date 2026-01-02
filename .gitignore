@@ -44,6 +44,10 @@ compile_commands.json
 # models
 pretrained_models/
 
+# local audio I/O
+audio_file/
+audio_file_gen/
+
 # train/inference files
 *.wav
 *.m4a

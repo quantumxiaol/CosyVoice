@@ -108,6 +108,24 @@
     sudo yum install sox sox-devel
     ```
 
+### Install with uv (recommended on macOS)
+
+``` sh
+# Install uv first: https://docs.astral.sh/uv/
+uv sync --python 3.12
+source .venv/bin/activate
+```
+
+- `uv sync` uses `pyproject.toml` and `uv.lock` to create a reproducible environment.
+
+### macOS notes
+
+``` sh
+brew install sox ffmpeg
+```
+
+- The optional `ttsfrd` wheel is Linux-only; on macOS we use `wetext` by default.
+
 ### Model download
 
 We strongly recommend that you download our pretrained `Fun-CosyVoice3-0.5B` `CosyVoice2-0.5B` `CosyVoice-300M` `CosyVoice-300M-SFT` `CosyVoice-300M-Instruct` model and `CosyVoice-ttsfrd` resource.
